@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">	 	 
+ 	<head>
+ 		<meta charset="UTF-8">	 
+ 	 	<title> Contacto Nuevo </title>
+ 	</head>	 
+ 	
+ 	<body>	 
+ 	 	<h3 > CONTACTO NUEVO </h3 >
+ 	 	
+ 	 	<form action="" method="POST" th:object="${contacto}" >
+ 	 		<div>
+ 	 			<label for="nombre"> &nbsp&nbsp Nombre: &nbsp&nbsp&nbsp </label> 
+ 	 			<input id="nombre" type="text" placeholder="Nombre" >
+ 	 		</div>
+ 	 		<br>
+ 	 		<div>
+ 	 			<labelfor="telefono"> &nbsp&nbsp Teléfono: &nbsp&nbsp </label >
+ 	 			<input id="telefono" type="text" placeholder="Eje: 2222-2222" >
+ 	 		</div>
+ 	 		<br>
+ 	 		<div>
+ 	 			<label for="celular"> &nbsp&nbsp Celular: &nbsp&nbsp&nbsp </label >
+ 	 			<input id="celular" type="text" placeholder="Eje: 7777-7777" >
+ 	 		</div>
+ 	 		<br>
+ 	 		<div>
+ 	 			<label for="email"> &nbsp&nbsp E-mail: &nbsp&nbsp </label >
+ 	 			<input id="email" type="text" placeholder="micorreo@mail.com" >
+ 	 		</div>
+ 	 		<br>
+ 	 		<div>
+ 	 			<label for="citas"> &nbsp&nbsp Citas &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp</label >
+ 	 			<input id="citas" type="date" > 
+ 	 		</div>
+ 	 		<br>
+ 	 		<div>
+ 	 			<label for="tipocontacto">&nbsp&nbsp Tipo de contacto &nbsp&nbsp </label >
+ 	 			<input id="tipocontacto" type="text" placeholder="Contacto"> 
+ 	 		</div>
+ 	 		<br>
+ 	 		<div>
+ 	 			<label for="direccion"> &nbsp&nbsp Dirección: &nbsp&nbsp </label > <br>
+ 	 			&nbsp&nbsp&nbsp&nbsp <textarea name="direccion" rows="10" cols="50"> </textarea>
+ 	 		</div>
+ 	 		<br>
+ 	 	 	<br>
+ 	 		
+ 	 		<button>
+ 	 			Guardar
+ 	 		</button>
+ 	 		
+ 	 		<br>
+ 	 		<a href="/">
+ 	 			Cancelar
+ 	 		</a>
+ 	 	</form>
+ 	 	
+ 	 	
+ 	 	
+ 	</body>	 
+</html>
